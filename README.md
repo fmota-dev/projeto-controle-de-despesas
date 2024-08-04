@@ -33,13 +33,6 @@ Este projeto é uma aplicação web para o controle de despesas pessoais. Permit
 
 ## Estrutura do Projeto
 
-controle-despesas/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
 - `index.html`: Contém a estrutura HTML da aplicação.
 - `style.css`: Contém os estilos CSS para a aplicação.
 - `script.js`: Contém a lógica JavaScript para a aplicação.
