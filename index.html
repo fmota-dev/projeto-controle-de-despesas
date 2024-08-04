@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Controle de despesas</title>
+</head>
+
+<body>
+  <h2>Controle de despesas</h2>
+
+  <div class="container">
+    <div class="filterMonth">
+      <h4>Saldo atual</h4>
+      <select name="input-month" id="month">
+        <option value="01">Janeiro</option>
+        <option value="02">Fevereiro</option>
+        <option value="03">Março</option>
+        <option value="04">Abril</option>
+        <option value="05">Maio</option>
+        <option value="06">Junho</option>
+        <option value="07">Julho</option>
+        <option value="08">Agosto</option>
+        <option value="09">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+      </select>
+    </div>
+
+    <h1 id="balance" class="balance">R$ 0.00</h1>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Receitas</h4>
+        <p id="money-plus" class="money plus">+ R$0.00</p>
+      </div>
+
+      <div>
+        <h4>Despesas</h4>
+        <p id="money-minus" class="money minus">- R$0.00</p>
+      </div>
+    </div>
+
+    <h3>Transações</h3>
+
+    <ul id="transactions" class="transactions">
+      <!-- <li class="minus">
+          Salário <span>-$400</span><button class="delete-btn">x</button>
+        </li> -->
+    </ul>
+
+    <h3>Adicionar transação</h3>
+
+    <form id="form">
+      <div class="form-control">
+        <label for="name">Nome</label>
+        <input autofocus type="text" id="name" placeholder="Nome da transação" />
+        <span class="input-error"></span>
+      </div>
+
+      <div class="form-control">
+        <label for="amount">Valor <br />
+          <small>(negativo - despesas, positivo - receitas)</small>
+        </label>
+        <input type="number" step="any" id="amount" placeholder="Valor da transação" />
+        <span class="input-error"></span>
+      </div>
+
+      <span id="date-display"></span>
+
+      <button class="btn">Adicionar</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
