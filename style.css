@@ -238,11 +238,6 @@ input[type="number"] {
     margin-bottom: 10px;
   }
 
-  .transactions li {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .operation {
     flex-direction: column;
     align-items: flex-start;
